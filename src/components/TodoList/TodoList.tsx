@@ -51,7 +51,7 @@ export const TodoList: React.FC = () => {
 
         <tbody>
           {todos.map(todo => (
-            <tr data-cy="todo">
+            <tr data-cy="todo" key={todo.id}>
               <td className="is-vcentered">{todo.id}</td>
               <td className="is-vcentered">
                 {todo.completed && (
